@@ -1,58 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" style="color-scheme: dark;">
+<html lang="zh-CN" style="color-scheme: dark;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyndon - UI/UX Designer & Design Researcher</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="shortcut icon" href="./assets/public/icon_L.svg"/>
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="shortcut icon" href="../assets/public/icon_L.svg"/>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
     <canvas class="fireworks"></canvas>
     <div class="head">
         <div class="main">
-            <a href="./index.html" class="logo"><img src="./assets/public/icon_L_head.svg"></a>
+            <a href="../index.html" class="logo"><img src="../assets/public/icon_L_head.svg"></a>
             <div class="menu">
-                <li class="magical btn nav" onclick="window.location.href='./index.html'">Home</li>
-                <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
-                <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
-                <li class="magical btn" onclick="window.location.href='./zh/index.html'"> <img src="./assets/public/Chinese.svg" alt="中文"></li>
+                <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                <li class="magical btn" onclick="window.location.href='./work.html'">作品</li>
+                <li class="magical btn" onclick="window.location.href='./about.html'">关于</li>
+                <li class="magical btn" onclick="window.location.href='../index.html'"> <img src="../assets/public/English.svg" alt="English"></li>
+                
             </div>
             <div class="menu" id="menu-expand">
                 <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
             </div>
             <div id="menu-panel">
                 <div class="menu-panel-content">
-                    <li class="magical btn nav" onclick="window.location.href='./index.html'">Home</li>
-                    <li class="magical btn" onclick="window.location.href='./work.html'">Work</li>
-                    <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
-                    <li class="magical btn" onclick="window.location.href='./zh/index.html'"> <img src="./assets/public/Chinese.svg" alt="中文"></li>
+                    <li class="magical btn nav" onclick="window.location.href='./index.html'">首页</li>
+                    <li class="magical btn" onclick="window.location.href='./work.html'">作品</li>
+                    <li class="magical btn" onclick="window.location.href='./about.html'">关于</li>
+                    <li class="magical btn" onclick="window.location.href='../index.html'"> <img src="../assets/public/English.svg" alt="English"></li>
                 </div>
             </div>
         </div>
-        <blockquote><img src="./assets/public/logo.svg"></blockquote>
+        <blockquote><img src="../assets/public/logo.svg"></blockquote>
     </div>
     <div class="index">
         <div class="hello">
             <div class="title">
-                <div class="title-hi">Hi, I'm</div>
-                <a class="title-name" href="https://liuzitao.top">Lyndon(WIP)</a>
+                <div class="title-hi">Hi, 这里是</div>
+                <a class="title-name" href="https://liuzitao.top">刘子滔</a>
             </div>
             <div class="hello-desc" id="typed"></div>
         </div>
         <div class="content-divider"></div>
         <div class="quickly-link">
-            <div class="title-hi">My Social Media</div>
+            <div class="title-hi">我的社交媒体</div>
             <div class="loader"></div>
             <div class="link-card">
                 <div class="link-card-list">
                     <div class="magical link-card-item">
                         <a href="https://scholar.google.com/citations?user=o_zQvfkAAAAJ&hl" target="_blank">
-                            <img src="./assets/index/googleScholar.png" alt="">
+                            <img src="../assets/index/googleScholar.png" alt="">
                             <div class="info">
-                                <div class="info-title">Google Scholar</div>
-                               <!--<div class="info-desc">Designer website navigation</div>--> 
+                                <div class="info-title">谷歌学术</div>
+                                <!--<div class="info-desc">Google Scholar</div>-->
                             </div>
                             <div class="icon icon-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -63,9 +64,9 @@
                     </div>
                     <div class="magical link-card-item">
                         <a href="https://www.behance.net/fantasitao" target="_blank">
-                            <img src="./assets/index/behance.png" alt="">
+                            <img src="../assets/index/behance.png" alt="">
                             <div class="info">
-                                <div class="info-title">Behance</div>
+                                <div class="info-title" lang="en">Behance</div>
                                 <!--<div class="info-desc">2200+ fill, dual color icon</div>-->
                             </div>
                             <div class="icon icon-arrow">
@@ -77,10 +78,10 @@
                     </div>
                     <div class="magical link-card-item">
                         <a href="https://fantasitao.zcool.com.cn/" target="_blank">
-                            <img src="./assets/index/zcool.png" alt="">
+                            <img src="../assets/index/zcool.png" alt="">
                             <div class="info">
-                                <div class="info-title">Zcool</div>
-                                <!--<div class="info-desc">B-end product layout adaptation</div>-->
+                                <div class="info-title">站酷</div>
+                                <!--<div class="info-desc" lang="en">Zcool</div>-->
                             </div>
                             <div class="icon icon-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -91,9 +92,9 @@
                     </div>
                     <div class="magical link-card-item">
                         <a href="https://www.instagram.com/fantasitao/" target="_blank">
-                            <img src="./assets/index/instagram.png" alt="">
+                            <img src="../assets/index/instagram.png" alt="">
                             <div class="info">
-                                <div class="info-title">Instagram</div>
+                                <div class="info-title" lang="en">Instagram</div>
                                 <!--<div class="info-desc">My Photographs</div>-->
                             </div>
                             <div class="icon icon-arrow">
@@ -105,9 +106,9 @@
                     </div>
                     <div class="magical link-card-item">
                         <a href="https://www.linkedin.com/in/liuzitao/" target="_blank">
-                            <img src="./assets/index/linkedin.png" alt="">
+                            <img src="../assets/index/linkedin.png" alt="">
                             <div class="info">
-                                <div class="info-title">Linkedin</div>
+                                <div class="info-title">领英</div>
                                 <!--<div class="info-desc">Replace the Figma page background</div>-->
                             </div>
                             <div class="icon icon-arrow">
@@ -203,8 +204,8 @@
     // 打字效果，感谢 typed.js: https://mattboldt.github.io/typed.js/docs/
     const options = {
         strings: [
-            ">_ welcome to my website ^1000",
-            ">_ and let's explore it now ^1000",
+            ">_ 欢迎来到我的网站 ^1000",
+            ">_ 这个版本的网站还在测试中，让我们一起探索吧！ ^1000",
         ],
         typeSpeed: 50, // 打印速度
         backSpeed: 20, // 回退速度
@@ -214,7 +215,7 @@
     };
     const typed = new Typed('#typed', options);
 </script>
-<script src="./js/main.min.js"></script>
-<script src='./js/anime.js'></script>
-<script src='./js/firework.js'></script>
+<script src="../js/main.min.js"></script>
+<script src='../js/anime.js'></script>
+<script src='../js/firework.js'></script>
 </html>
