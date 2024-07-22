@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 来自草帽老师，https://www.yuque.com/uixxs/bilibili/ffug5hhtrfdl9nk1 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纯图片网页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            /* 网页背景色为纯白色 */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFFFFF;
+            /* 容器背景色为纯白色 */
+            padding: 0;
+            margin: 0 auto;
+            width: 85%;
+            /* 默认宽度为 */
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+
+        @media only screen and (max-width: 1280px) {
+            .container {
+                width: 100%;
+                /* 在小于1280px时宽度为100% */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testing, We will coming Soon!</h1>
+    <h1>测试网页</h1>
+    <div class="container">
+        <img src="../assets/works/en/testImage1.png" alt="Image 1" loading="lazy">
+        <img src="../assets/works/en/testImage2.png" alt="Image 2" loading="lazy">
+    </div>
+</body>
+
+</html>
