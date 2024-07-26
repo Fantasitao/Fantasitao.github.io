@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyndon - My Work</title>
-    <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="shortcut icon" href="./assets/public/icon_L.svg"/>
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="shortcut icon" href="../assets/public/icon_L.svg"/>
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0E0E13;
+            /* 网页背景色为纯白色 */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFFFFF;
+            /* 容器背景色为纯白色 */
+            padding: 0;
+            margin: 0 auto;
+            width: 60%;
+            /* 默认宽度为 */
+        }
+
+        .h1{
+            font-size: 64px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+
+        @media only screen and (max-width: 1280px) {
+            .container {
+                width: 100%;
+                /* 在小于1280px时宽度为100% */
+            }
+        }
+    </style>
 </head>
 <body>
     <canvas class="fireworks"></canvas>
-    <div class="head">
+    <!-- 头部区域 -->
+    <!-- <div class="head">
         <div class="main">
             <a href="./index.html" class="logo"><img src="./assets/public/icon_L_head.svg"></a>
             <div class="menu">
@@ -31,56 +73,14 @@
             </div>
         </div>
         <blockquote><img src="./assets/public/logo.svg"></blockquote>
+    </div> -->
+    <div class="h1">Testing, We will coming Soon!</div>
+    <div class="h1">测试网页</div>
+
+    <div class="container">
+        <img src="../assets/works/en/testImage1.png" alt="Image 1" loading="lazy">
+        <img src="../assets/works/en/testImage2.png" alt="Image 2" loading="lazy">
     </div>
-        <div class="work">
-            <div class="card-list">
-                <div class="magical item">
-                    <a href="./works/test1.html" target="_blank">
-                        <div class="dark"><img class="cover" src="./assets/work/comingsoon.png"></div>
-                        <div class="text">
-                            <div class="title-area">
-                                <div class="title">
-                                    <div class="name">Title</div>
-                                    <div class="name link"> ↗</div>
-                                </div>
-                                <div class="tag tag-web">Web</div>
-                            </div>
-                            <div class="desc">Welcome to my open source blog</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="magical item">
-                    <a href="./works/test2.html" target="_blank">
-                        <div class="dark"><img class="cover" src="./assets/work/empty.png"></div>
-                        <div class="text">
-                            <div class="title-area">
-                                <div class="title">
-                                    <div class="name">Title</div>
-                                    <div class="name link"> ↗</div>
-                                </div>
-                                <div class="tag tag-assets">Assets</div>
-                            </div>
-                            <div class="desc">Welcome to my open source blog</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="magical item">
-                    <a href="https://asorn.cn/" target="_blank">
-                        <div class="dark"><img class="cover" src="./assets/work/empty.png"></div>
-                        <div class="text">
-                            <div class="title-area">
-                                <div class="title">
-                                    <div class="name">Title</div>
-                                    <div class="name link"> ↗</div>
-                                </div>
-                                <div class="tag tag-app">App</div>
-                            </div>
-                            <div class="desc">Welcome to my open source blog</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="footer">
             <div class="copyright">
                 <div>© 2024 <a href="https://liuzitao.top" target="_blank">Lyndon</a></a></div>
@@ -120,7 +120,7 @@
         });
     });
 </script>
-<script src="./js/main.min.js"></script>
-<script src='./js/anime.js'></script>
-<script src='./js/firework.js'></script>
+<script src="../js/main.min.js"></script>
+<script src='../js/anime.js'></script>
+<script src='../js/firework.js'></script>
 </html>
