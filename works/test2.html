@@ -15,28 +15,84 @@
             /* 网页背景色为纯白色 */
         }
 
+        .work-info{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* width: 90%; */
+            align-items: center;
+        }
+
+        .work-title{
+            font-size: 54px;
+            color: #ffffffEE;
+            text-align: center;
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+
+        .work-description{
+            font-size: 15px;
+            color: #ffffffCC;
+            text-align: center;
+            font-style: italic;
+            font-weight: 100;
+            padding: 0 20%;
+        }
+
+        .work-detail{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap:200px;
+            padding-top: 100px;
+            padding-bottom: 50px;
+
+        }
+
+        .work-detail-card{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .work-detail-title{
+            font-size: 14px;
+            color: #ffffffAA;
+            text-align: left;
+            font-style: italic;
+            font-weight: 200;
+        }
+
+        .work-detail-item{
+            font-size: 12px;
+            color: #ffffffCC;
+            text-align: left;
+            font-style: normal;
+            font-weight: 400;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #FFFFFF;
+            background-color: #0E0E13;
             /* 容器背景色为纯白色 */
             padding: 0;
-            margin: 0 auto;
-            width: 60%;
+            margin: 0 auto 200px auto;
+            width: 90%;
             /* 默认宽度为 */
-        }
-
-        .h1{
-            font-size: 64px;
-            color: #ffffff;
-            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         img {
             margin: 0;
             padding: 0;
             width: 100%;
+            
         }
 
 
@@ -51,35 +107,74 @@
 <body>
     <canvas class="fireworks"></canvas>
     <!-- 头部区域 -->
-    <!-- <div class="head">
+    <div class="head">
         <div class="main">
-            <a href="./index.html" class="logo"><img src="./assets/public/icon_L_head.svg"></a>
+            <a href="../index.html" class="logo"><img src="../assets/public/icon_L_head.svg"></a>
             <div class="menu">
-                <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
-                <li class="magical btn nav" onclick="window.location.href='./work.html'">Work</li>
-                <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
-                <li class="magical btn" onclick="window.location.href='./zh/work.html'"> <img src="./assets/public/Chinese.svg" alt="中文"></li>
+                <li class="magical btn" onclick="window.location.href='../index.html'">Home</li>
+                <li class="magical btn nav" onclick="window.location.href='../work.html'">Work</li>
+                <li class="magical btn" onclick="window.location.href='../about.html'">About</li>
+                <li class="magical btn" onclick="window.location.href='../zh/work.html'"> <img src="../assets/public/Chinese.svg" alt="中文"></li>
             </div>
             <div class="menu" id="menu-expand">
                 <li class="magical btn skin" id="menu-expand-child"><i class="icon menu-icon"></i></li>
             </div>
             <div id="menu-panel">
                 <div class="menu-panel-content">
-                    <li class="magical btn" onclick="window.location.href='./index.html'">Home</li>
-                    <li class="magical btn nav" onclick="window.location.href='./work.html'">Work</li>
-                    <li class="magical btn" onclick="window.location.href='./about.html'">About</li>
-                    <li class="magical btn" onclick="window.location.href='./zh/work.html'"> <img src="./assets/public/Chinese.svg" alt="中文"></li>
+                    <li class="magical btn" onclick="window.location.href='../index.html'">Home</li>
+                    <li class="magical btn nav" onclick="window.location.href='../work.html'">Work</li>
+                    <li class="magical btn" onclick="window.location.href='../about.html'">About</li>
+                    <li class="magical btn" onclick="window.location.href='../zh/work.html'"> <img src="../assets/public/Chinese.svg" alt="中文"></li>
                 </div>
             </div>
         </div>
-        <blockquote><img src="./assets/public/logo.svg"></blockquote>
-    </div> -->
-    <div class="h1">Testing, We will coming Soon!</div>
-    <div class="h1">测试网页</div>
-
-    <div class="container">
-        <img src="../assets/works/en/testImage1.png" alt="Image 1" loading="lazy">
-        <img src="../assets/works/en/testImage2.png" alt="Image 2" loading="lazy">
+        <!-- 旋转logo -->
+        <!-- <blockquote><img src="../assets/public/logo.svg"></blockquote> -->
+    </div>
+    <div class="body">
+        <div class="work-info">
+            <div class="work-title">
+                网页测试中
+            </div>
+            <div class="work-description">
+                This area is for project descriptionxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
+            </div>
+            <div class="work-detail">
+                <div class="work-detail-card">
+                    <div class="work-detail-title">
+                        Designer /
+                    </div>
+                    <div class="work-detail-item">
+                        <a href="https://www.liuzitao.top">Zitao Liu↗</a>
+                    </div>
+                </div>
+                <div class="work-detail-card">
+                    <div class="work-detail-title">
+                        Credits /
+                    </div>
+                    <div class="work-detail-item">
+                        zitao Liu
+                    </div>
+                </div>
+                <div class="work-detail-card">
+                    <div class="work-detail-title">
+                        Time /
+                    </div>
+                    <div class="work-detail-item">
+                        7 Months, <br>Jun 2023 - July 2024
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="container">
+            <img src="../assets/works/en/testImage1.png" alt="Image 1" loading="lazy">
+            <img src="../assets/works/en/testImage2.png" alt="Image 2" loading="lazy">
+        </div>
     </div>
         <div class="footer">
             <div class="copyright">
