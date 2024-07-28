@@ -21,18 +21,23 @@
             flex-direction: column;
             /* width: 90%; */
             align-items: center;
-        }
-
-        .work-title{
-            font-size: 54px;
-            color: #ffffffEE;
-            text-align: center;
-            padding-top: 200px;
             padding-bottom: 100px;
         }
 
+        .work-title{
+            font-size: 32px;
+            font-style: normal;
+            background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            font-weight: 700;
+            padding: 200px 20% 100px 20%;
+        }
+
         .work-description{
-            font-size: 15px;
+            font-size: 14px;
             color: #ffffffCC;
             text-align: center;
             font-style: italic;
@@ -47,7 +52,7 @@
             align-items: flex-start;
             gap:200px;
             padding-top: 100px;
-            padding-bottom: 50px;
+            padding-bottom: 100px;
 
         }
 
@@ -67,11 +72,22 @@
         }
 
         .work-detail-item{
-            font-size: 12px;
-            color: #ffffffCC;
+            font-size: 14px;
+            color: #ffffffBB;
             text-align: left;
             font-style: normal;
             font-weight: 400;
+        }
+
+        .work-detail-item a {
+        font-size: 14px;
+        text-decoration: none; /* 去除默认下划线 */
+        color: #ffffffBB;
+        transition: color 0.5s ease;
+        }
+        .work-detail-item a:hover {
+        color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
+        cursor: pointer; /* 鼠标悬浮时改变光标形状 */
         }
 
         .container {
@@ -142,7 +158,7 @@
     <div class="body">
         <div class="work-info">
             <div class="work-title">
-                网页测试中
+                Research on Experience Design to Help Depression Droups to Relieve Their Symptoms
             </div>
             <div class="work-description">
                 This area is for project descriptionxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -155,7 +171,7 @@
                         Designer /
                     </div>
                     <div class="work-detail-item">
-                        <a href="https://www.liuzitao.top">Zitao Liu↗</a>
+                        <a href="https://www.liuzitao.top" >Zitao Liu↗</a>
                     </div>
                 </div>
                 <div class="work-detail-card">
@@ -163,7 +179,7 @@
                         Credits /
                     </div>
                     <div class="work-detail-item">
-                        zitao Liu
+                        Li Pan (Supervisor)
                     </div>
                 </div>
                 <div class="work-detail-card">
@@ -171,15 +187,20 @@
                         Time /
                     </div>
                     <div class="work-detail-item">
-                        7 Months, <br>Jun 2023 - July 2024
+                        Oct 2022 - May 2023
                     </div>
                 </div>
                 
             </div>
-            
+            <a href="#xxx01">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 62 62" fill="none">
+                    <path d="M15.5 23.25C15.5 19.1391 17.133 15.1967 20.0398 12.2898C22.9467 9.38303 26.8891 7.75 31 7.75C35.1109 7.75 39.0533 9.38303 41.9602 12.2898C44.867 15.1967 46.5 19.1391 46.5 23.25V38.75C46.5 42.8609 44.867 46.8033 41.9602 49.7102C39.0533 52.617 35.1109 54.25 31 54.25C26.8891 54.25 22.9467 52.617 20.0398 49.7102C17.133 46.8033 15.5 42.8609 15.5 38.75V23.25Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M31 18.0834V28.4167" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
         </div>
         
-        <div class="container">
+        <div class="container" id="xxx01">
             <img src="../assets/works/en/testImage1.png" alt="Image 1" loading="lazy">
             <img src="../assets/works/en/testImage2.png" alt="Image 2" loading="lazy">
         </div>
