@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0E0E13;
+}
+
+.work-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* width: 90%; */
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.work-title{
+    font-size: 32px;
+    font-style: normal;
+    background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: 700;
+    padding: 200px 20% 100px 20%;
+}
+
+.work-description{
+    font-size: 14px;
+    color: #ffffffCC;
+    text-align: left;
+    /* font-style: italic; */
+    font-weight: 100;
+    padding: 0 20%;
+}
+
+.work-description a {
+    font-size: 14px;
+    text-decoration: none; /* 去除默认下划线 */
+    color: #ffffffBB;
+    transition: color 0.5s ease;
+    }
+    .work-description a:hover {
+    color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
+    cursor: pointer; /* 鼠标悬浮时改变光标形状 */
+    }
+
+.work-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.work-detail-card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.work-detail-title{
+    font-size: 14px;
+    color: #ffffffAA;
+    text-align: left;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.work-detail-item{
+    font-size: 14px;
+    color: #ffffffBB;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.work-detail-item a {
+font-size: 14px;
+text-decoration: none; /* 去除默认下划线 */
+color: #ffffffBB;
+transition: color 0.5s ease;
+}
+.work-detail-item a:hover {
+color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
+cursor: pointer; /* 鼠标悬浮时改变光标形状 */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0E0E13;
+    /* 容器背景色为纯白色 */
+    padding: 0;
+    margin: 0 auto 200px auto;
+    /* width记得与form的margin匹配 */
+    width: 70%;
+    /* 默认宽度为 */
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 1px;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+.form{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    /* margin 记得与container的width匹配 */
+    margin: 0 15% 100px 15%;
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        width: 100%;
+        /* 在小于1280px时宽度为100% */
+    }
+}
