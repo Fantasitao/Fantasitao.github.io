@@ -1281,6 +1281,19 @@ body {
                                 line-height: 28px;
                                 list-style: circle;
                             }
+                            a{
+                                color: #B3B3C1; 
+                                text-decoration: none; 
+                                font-size: 14px; line-height: 24px;
+                                transition: color .25s ease-in-out;
+                                
+                            }
+                            a:hover{
+                                color: #6361DD; 
+                                text-decoration:underline;
+
+                            }
+
                         } 
                     }
                 }
