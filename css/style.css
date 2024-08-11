@@ -1043,6 +1043,13 @@ body {
   flex-direction: column;
 }
 
+.about .about-name-block {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: baseline;
+}
+
 .about .about-name {
   font-size: 32px;
   line-height: 100%;
@@ -1050,6 +1057,19 @@ body {
   margin-bottom: 48px;
   background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
   background-clip: text;
+  width: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .about-pronouns {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  margin-bottom: 48px;
+  background: linear-gradient(180deg, rgba(232, 232, 246, 0.5) 0%, rgba(232, 232, 246, 0.25) 100%);
+  background-clip: text;
+  width: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
