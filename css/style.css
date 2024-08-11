@@ -1412,16 +1412,42 @@ body {
 }
 
 .about .about-bottom .experience .item .project-experience .item .desc a {
+  position: relative;
   color: #B3B3C1;
   text-decoration: none;
   font-size: 14px;
   line-height: 24px;
-  transition: color .25s ease-in-out;
+  transition: color .25s ease;
+}
+
+.about .about-bottom .experience .item .project-experience .item .desc a::after {
+  content: "";
+  /* 伪元素内容为空 */
+  position: absolute;
+  /* 绝对定位 */
+  left: 0;
+  /* 从左侧开始 */
+  bottom: 0;
+  /* 从底部开始 */
+  width: 100%;
+  /* 宽度为100% */
+  height: 1.5px;
+  /* 下滑线的高度 */
+  background-color: #6361DD;
+  /* 下滑线的颜色 */
+  transform: scaleX(0);
+  /* 初始状态下滑线的缩放为0 */
+  transition: transform 0.25s ease;
+  /* 平滑过渡效果 */
 }
 
 .about .about-bottom .experience .item .project-experience .item .desc a:hover {
   color: #6361DD;
-  text-decoration: underline;
+}
+
+.about .about-bottom .experience .item .project-experience .item .desc a:hover::after {
+  transform: scaleX(1);
+  /* 鼠标悬停时下滑线展开 */
 }
 
 .about .about-bottom .experience .item-designAwards {
