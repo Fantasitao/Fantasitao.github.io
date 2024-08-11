@@ -1424,6 +1424,107 @@ body {
   text-decoration: underline;
 }
 
+.about .about-bottom .experience .item-designAwards {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 16px;
+}
+
+.about .about-bottom .experience .item-designAwards .time {
+  font-size: 14px;
+  line-height: 24px;
+  color: #B3B3C1;
+}
+
+.about .about-bottom .experience .item-designAwards .name {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about .about-bottom .experience .item-designAwards .name .company a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #B3B3C1;
+  transition: color .15s ease-in;
+}
+
+.about .about-bottom .experience .item-designAwards .name .company a:hover {
+  color: #6361DC;
+}
+
+.about .about-bottom .experience .item-designAwards .name .job {
+  font-size: 12px;
+  line-height: 20px;
+  color: #62616F;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .title {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .project-name {
+  font-size: 12px;
+  line-height: 20px;
+  font-style: italic;
+  color: #62616F;
+  margin-bottom: 16px;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .project-name a {
+  color: #62616F;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  transition: color .25s ease-in-out;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .project-name a:hover {
+  color: #6361DD;
+  text-decoration: underline;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .desc {
+  color: #B3B3C1;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .desc li {
+  font-size: 14px;
+  line-height: 28px;
+  list-style: none;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .desc a {
+  color: #B3B3C1;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  transition: color .25s ease-in-out;
+}
+
+.about .about-bottom .experience .item-designAwards .project-experience .item .desc a:hover {
+  color: #6361DD;
+  text-decoration: underline;
+}
+
 /* tooltip */
 .tooltip {
   position: relative;
