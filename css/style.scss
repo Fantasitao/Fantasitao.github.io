@@ -998,13 +998,34 @@ body {
                 font-size: 14px;
                 line-height: 24px;
                 font-weight: 500;
-                text-decoration: underline;
+                text-decoration: none;
                 color: $color-text-body-secondary;
                 transition: color .15s ease-in;
+                position: relative; /* 使a标签为相对定位 */
 
-                &:hover {
-                    color: $color-brand-default;
-                }
+                // &:hover {
+                //     color: $color-brand-default;
+                // }
+                // This block is the previous hover effect
+
+            }
+            a::after{
+                content: ""; /* 伪元素内容为空 */
+                position: absolute; /* 绝对定位 */
+                left: 0; /* 从左侧开始 */
+                bottom: 0; /* 从底部开始 */
+                width: 100%; /* 宽度为100% */
+                height: 1.5px; /* 下滑线的高度 */
+                background-color: #6361DD; /* 下滑线的颜色 */
+                transform: scaleX(0); /* 初始状态下滑线的缩放为0 */
+                transition: transform 0.25s ease; /* 平滑过渡效果 */
+            }
+            a:hover{
+                color: #6361DD; 
+                // text-decoration:underline;
+            }
+            a:hover::after {
+                transform: scaleX(1); /* 鼠标悬停时下滑线展开 */
             }
         }
     }
@@ -1305,6 +1326,7 @@ body {
                             }
                             a{
                                 position: relative;
+                                display: inline-block;//解决a标签跨行显示问题
                                 color: #B3B3C1; 
                                 text-decoration: none; 
                                 font-size: 14px; line-height: 24px;
