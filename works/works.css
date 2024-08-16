@@ -50,7 +50,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap:200px;
+    gap:14vw;
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -127,5 +127,14 @@ img {
     .container {
         width: 100%;
         /* 在小于1280px时宽度为100% */
+    }
+}
+
+/* 媒体查询：当视口宽度小于 600px 时 */
+@media (max-width: 600px) {
+
+    .work-detail{ /*作者信息三栏*/
+        flex-direction: column ;
+        gap: vh;
     }
 }
