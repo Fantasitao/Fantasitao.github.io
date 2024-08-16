@@ -7,7 +7,7 @@
 欢迎来到我的个人网站，
 > 我的网站地址：[liuzitao.top](https://www.liuzitao.top)
 > 
-这个项目是来自https://github.com/asorn/asorn-open 的一个fork，欢迎关注原作者及其网站https://asorn.cn/
+这个项目是来自https://github.com/asorn/asorn-open 的一个fork，由我进行了一定的修改。欢迎关注原作者及其网站https://asorn.cn/
 
 ---
 **↓↓↓↓以下信息来自于源项目的readme文件↓↓↓↓**

@@ -27,7 +27,7 @@ body {
 }
 
 .work-description{
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff89;
     text-align: left;
     /* font-style: italic; */
@@ -36,7 +36,7 @@ body {
 }
 
 .work-description a {
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none; /* 去除默认下划线 */
     color: #ffffff89;
     transition: color 0.5s ease-in-out;
