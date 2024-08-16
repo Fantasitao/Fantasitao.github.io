@@ -15,30 +15,31 @@ body {
 
 .work-title{
     font-size: 32px;
+    letter-spacing: -.0325em;
     font-style: normal;
     background: linear-gradient(180deg, #E8E8F6 0%, rgba(232, 232, 246, 0.72) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
     padding: 200px 20% 100px 20%;
 }
 
 .work-description{
-    font-size: 14px;
-    color: #ffffffCC;
+    font-size: 16px;
+    color: #ffffff89;
     text-align: left;
     /* font-style: italic; */
-    font-weight: 100;
+    font-weight: 300;
     padding: 0 20%;
 }
 
 .work-description a {
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none; /* 去除默认下划线 */
-    color: #ffffffBB;
-    transition: color 0.5s ease;
+    color: #ffffff89;
+    transition: color 0.5s ease-in-out;
     }
     .work-description a:hover {
     color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
