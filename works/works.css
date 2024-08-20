@@ -91,16 +91,68 @@ color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
 cursor: pointer; /* 鼠标悬浮时改变光标形状 */
 }
 
+/* main-container包含作品已经outline */
+.main-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    padding: 0;
+    margin: 0 auto 200px auto;
+    /* width记得与form的margin匹配 */
+    width: 90%;
+    /* 默认宽度为 */
+}
+.work-outline{
+    display: flex;
+    flex-direction: column;
+    background-color: #201e2b32;
+    width: 400px;
+    position: sticky;
+    top: 100px; /* 粘性元素在视口顶部 */
+    height: 500px;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.work-outline-title{
+    display:flex ;
+    justify-content: center;
+    font-size: 17px;
+    color: rgba(245, 245, 245, 0.636);
+    margin: 30px auto;
+
+}
+.work-outline-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.work-outline-content-item{
+    display: flex;
+    text-align: left;
+    font-size:14px;
+    background-color: #000000b7;
+    border-radius: 10px;
+    padding: 6px 20px;
+    color: #8a8f98;
+    letter-spacing: -0.18px;
+    backdrop-filter: blur(10px); /*背景虚化*/
+
+
+}
+
+.right-column{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #0E0E13;
     /* 容器背景色为纯白色 */
-    padding: 0;
-    margin: 0 auto 200px auto;
-    /* width记得与form的margin匹配 */
-    width: 70%;
     /* 默认宽度为 */
     border-radius: 20px;
     overflow: hidden;
@@ -118,8 +170,6 @@ img {
     justify-content: center;
     border-radius: 20px;
     overflow: hidden;
-    /* margin 记得与container的width匹配 */
-    margin: 0 15% 100px 15%;
 
 }
 
