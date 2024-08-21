@@ -1,3 +1,7 @@
+span {
+    font-size: inherit; /* 强制继承父元素的字体大小 */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -91,13 +95,14 @@ color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
 cursor: pointer; /* 鼠标悬浮时改变光标形状 */
 }
 
-/* main-container包含作品已经outline */
+/* main-container包含作品以及outline */
 .main-container{
     display: flex;
     flex-direction: row;
     gap: 2vw;
     padding: 0;
     margin: 0 auto 200px auto;
+    flex-shrink: 1;
     /* width记得与form的margin匹配 */
     width: 90%;
     /* 默认宽度为 */
@@ -105,11 +110,13 @@ cursor: pointer; /* 鼠标悬浮时改变光标形状 */
 .work-outline{
     display: flex;
     flex-direction: column;
-    background-color: #201e2b32;
-    width: 400px;
+    background-color: #8383830d;
+    /* width: fit-content; */
+    min-width:200px;
+    max-width: 400px;
     position: sticky;
     top: 100px; /* 粘性元素在视口顶部 */
-    height: 500px;
+    height: fit-content;
     border-radius: 20px;
     padding: 0 10px;
 }
@@ -123,22 +130,34 @@ cursor: pointer; /* 鼠标悬浮时改变光标形状 */
 
 }
 .work-outline-content{
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: stretch;
+    gap: 0px;
+    padding-bottom: 20px;
 }
 .work-outline-content-item{
+    align-items: stretch;
     display: flex;
     text-align: left;
     font-size:14px;
-    background-color: #000000b7;
     border-radius: 10px;
     padding: 6px 20px;
     color: #8a8f98;
     letter-spacing: -0.18px;
     backdrop-filter: blur(10px); /*背景虚化*/
+    transition: all 0.4s ease-in-out;
+}
 
+.work-outline-content-item:hover{
+    background-color: #ffffff19;
+    /* color: #abb2be; */
+    color: #6361DD;
+}
 
+.work-outline-content-item:active {
+    transform: scale(0.95); /* 按下时缩小 */
 }
 
 .right-column{
@@ -183,6 +202,10 @@ img {
 
 /* 媒体查询：当视口宽度小于 600px 时 */
 @media (max-width: 600px) {
+
+    .work-outline {
+        display: none; /* 隐藏outline元素 */
+    }
 
     .work-detail{ /*作者信息三栏*/
         flex-direction: column ;
