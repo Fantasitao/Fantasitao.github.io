@@ -104,7 +104,7 @@ cursor: pointer; /* 鼠标悬浮时改变光标形状 */
     margin: 0 auto 200px auto;
     flex-shrink: 1;
     /* width记得与form的margin匹配 */
-    width: 90%;
+    width: 94%;
     /* 默认宽度为 */
 }
 .work-outline{
@@ -112,13 +112,13 @@ cursor: pointer; /* 鼠标悬浮时改变光标形状 */
     flex-direction: column;
     background-color: #8383830d;
     /* width: fit-content; */
-    min-width:200px;
+    min-width: 350px;
     max-width: 400px;
     position: sticky;
     top: 100px; /* 粘性元素在视口顶部 */
     height: fit-content;
-    border-radius: 20px;
     padding: 0 10px;
+    border-radius: 20px;
 }
 
 .work-outline-title{
@@ -147,7 +147,7 @@ cursor: pointer; /* 鼠标悬浮时改变光标形状 */
     color: #8a8f98;
     letter-spacing: -0.18px;
     backdrop-filter: blur(10px); /*背景虚化*/
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .work-outline-content-item:hover{
