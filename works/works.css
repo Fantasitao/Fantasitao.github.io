@@ -95,6 +95,18 @@ color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
 cursor: pointer; /* 鼠标悬浮时改变光标形状 */
 }
 
+
+
+.mouse{
+    transition: all 0.3s ease;
+    transform: translateY (0);
+}
+
+.mouse:hover{
+    transform: scale(1.05);
+    animation: mouseMove 1s  infinite;
+}
+
 /* main-container包含作品以及outline */
 .main-container{
     display: flex;
@@ -210,5 +222,22 @@ img {
     .work-detail{ /*作者信息三栏*/
         flex-direction: column ;
         gap: vh;
+    }
+}
+
+@keyframes mouseMove {
+    0% {
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+    50% {
+        transform: translateY(10px) scale(0.95);
+        filter: blur(1px);
+        opacity: 0.8; /* 可以选择让图标变得透明 */
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+        opacity: 1;
     }
 }
