@@ -85,16 +85,34 @@ body {
 }
 
 .work-detail-item a {
-font-size: 14px;
-text-decoration: none; /* 去除默认下划线 */
-color: #ffffffBB;
-transition: color 0.5s ease;
-}
-.work-detail-item a:hover {
-color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
-cursor: pointer; /* 鼠标悬浮时改变光标形状 */
-}
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffffBB;
+    transition: color .15s ease-in;
+    position: relative; /* 使a标签为相对定位 */
 
+
+}
+.work-detail-item a::after{
+    content: ""; /* 伪元素内容为空 */
+    position: absolute; /* 绝对定位 */
+    left: 0; /* 从左侧开始 */
+    bottom: 0; /* 从底部开始 */
+    width: 100%; /* 宽度为100% */
+    height: 4px; /* 下滑线的高度 */
+    background-color: #6361DD; /* 下滑线的颜色 */
+    transform: scaleX(0); /* 初始状态下滑线的缩放为0 */
+    transition: transform 0.25s ease; /* 平滑过渡效果 */
+    border-radius: 10px;
+}
+.work-detail-item a:hover{
+    color: #6361DD; 
+}
+.work-detail-item a:hover::after {
+    transform: scaleX(1); /* 鼠标悬停时下滑线展开 */
+}
 
 
 .mouse{
