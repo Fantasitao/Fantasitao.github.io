@@ -1392,14 +1392,42 @@ body {
 }
 
 .about .about-bottom .experience .item .name .company a {
-  font-size: 14px;
-  line-height: 24px;
+  text-decoration: none;
   color: #B3B3C1;
   transition: color .15s ease-in;
+  position: relative;
+  /* 使a标签为相对定位 */
+}
+
+.about .about-bottom .experience .item .name .company a::after {
+  content: "";
+  /* 伪元素内容为空 */
+  position: absolute;
+  /* 绝对定位 */
+  left: 0;
+  /* 从左侧开始 */
+  bottom: 0;
+  /* 从底部开始 */
+  width: 100%;
+  /* 宽度为100% */
+  height: 1.5px;
+  /* 下滑线的高度 */
+  background-color: #6361DD;
+  /* 下滑线的颜色 */
+  transform: scaleX(0);
+  /* 初始状态下滑线的缩放为0 */
+  transition: transform 0.25s ease;
+  /* 平滑过渡效果 */
+  border-radius: 10px;
 }
 
 .about .about-bottom .experience .item .name .company a:hover {
-  color: #6361DC;
+  color: #6361DD;
+}
+
+.about .about-bottom .experience .item .name .company a:hover::after {
+  transform: scaleX(1);
+  /* 鼠标悬停时下滑线展开 */
 }
 
 .about .about-bottom .experience .item .name .job {
@@ -1579,45 +1607,6 @@ body {
 .about .about-bottom .experience .item-designAwards .project-experience .item .desc a:hover {
   color: #6361DD;
   text-decoration: underline;
-}
-
-.company a {
-  text-decoration: none;
-  color: #B3B3C1;
-  transition: color .15s ease-in;
-  position: relative;
-  /* 使a标签为相对定位 */
-}
-
-.company a::after {
-  content: "";
-  /* 伪元素内容为空 */
-  position: absolute;
-  /* 绝对定位 */
-  left: 0;
-  /* 从左侧开始 */
-  bottom: 0;
-  /* 从底部开始 */
-  width: 100%;
-  /* 宽度为100% */
-  height: 1.5px;
-  /* 下滑线的高度 */
-  background-color: #6361DD;
-  /* 下滑线的颜色 */
-  transform: scaleX(0);
-  /* 初始状态下滑线的缩放为0 */
-  transition: transform 0.25s ease;
-  /* 平滑过渡效果 */
-  border-radius: 10px;
-}
-
-.company a:hover {
-  color: #6361DD;
-}
-
-.company a:hover::after {
-  transform: scaleX(1);
-  /* 鼠标悬停时下滑线展开 */
 }
 
 /* tooltip */
