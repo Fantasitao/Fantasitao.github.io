@@ -1130,6 +1130,7 @@ body {
   /* 初始状态下滑线的缩放为0 */
   transition: transform 0.25s ease;
   /* 平滑过渡效果 */
+  border-radius: 10px;
 }
 
 .about .about-info-left .introduce-desc a:hover {

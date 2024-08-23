@@ -1019,6 +1019,7 @@ body {
                 background-color: #6361DD; /* 下滑线的颜色 */
                 transform: scaleX(0); /* 初始状态下滑线的缩放为0 */
                 transition: transform 0.25s ease; /* 平滑过渡效果 */
+                border-radius: 10px;
             }
             a:hover{
                 color: #6361DD; 
