@@ -101,7 +101,7 @@ body {
     left: 0; /* 从左侧开始 */
     bottom: 0; /* 从底部开始 */
     width: 100%; /* 宽度为100% */
-    height: 4px; /* 下滑线的高度 */
+    height: 1.5px; /* 下滑线的高度 */
     background-color: #6361DD; /* 下滑线的颜色 */
     transform: scaleX(0); /* 初始状态下滑线的缩放为0 */
     transition: transform 0.25s ease; /* 平滑过渡效果 */
