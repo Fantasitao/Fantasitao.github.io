@@ -142,8 +142,8 @@ body {
     flex-direction: column;
     background-color: #8383830d;
     /* width: fit-content; */
-    min-width: 350px;
-    max-width: 400px;
+    width: 30vw;
+    min-width: 300px;
     position: sticky;
     top: 100px; /* 粘性元素在视口顶部 */
     height: fit-content;
@@ -227,6 +227,12 @@ img {
     .container {
         width: 100%;
         /* 在小于1280px时宽度为100% */
+    }
+}
+/* 媒体查询修改outline栏 */
+@media (max-width: 1000px){
+    .work-outline{
+        min-width: 200px;
     }
 }
 
