@@ -8,7 +8,7 @@ body {
     background-color: #0E0E13;
 }
 
-.work-info{
+.work-info {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ body {
     padding-bottom: 100px;
 }
 
-.work-title{
+.work-title {
     font-size: 32px;
     letter-spacing: -.0325em;
     font-style: normal;
@@ -30,7 +30,7 @@ body {
     padding: 200px 20% 100px 20%;
 }
 
-.work-description{
+.work-description {
     font-size: 14px;
     color: #ffffff89;
     text-align: left;
@@ -41,34 +41,38 @@ body {
 
 .work-description a {
     font-size: 14px;
-    text-decoration: none; /* 去除默认下划线 */
+    text-decoration: none;
+    /* 去除默认下划线 */
     color: #ffffff89;
     transition: color 0.5s ease-in-out;
-    }
-    .work-description a:hover {
-    color: #6361DC; /* 鼠标悬浮时改变文字颜色 */
-    cursor: pointer; /* 鼠标悬浮时改变光标形状 */
-    }
+}
 
-.work-detail{
+.work-description a:hover {
+    color: #6361DC;
+    /* 鼠标悬浮时改变文字颜色 */
+    cursor: pointer;
+    /* 鼠标悬浮时改变光标形状 */
+}
+
+.work-detail {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap:14vw;
+    gap: 14vw;
     padding-top: 100px;
     padding-bottom: 100px;
 
 }
 
-.work-detail-card{
+.work-detail-card {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
 
-.work-detail-title{
+.work-detail-title {
     font-size: 14px;
     color: #ffffffAA;
     text-align: left;
@@ -76,7 +80,7 @@ body {
     font-weight: 200;
 }
 
-.work-detail-item{
+.work-detail-item {
     font-size: 14px;
     color: #ffffffBB;
     text-align: left;
@@ -212,9 +216,10 @@ img {
     margin: 0;
     padding: 0;
     width: 100%;
-    
+
 }
-.form{
+
+.form {
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -243,8 +248,13 @@ img {
         display: none; /* 隐藏outline元素 */
     }
 
-    .work-detail{ /*作者信息三栏*/
-        flex-direction: column ;
+    .work-outline {
+        display: none; /* 隐藏outline元素 */
+    }
+
+    .work-detail {
+        /*作者信息三栏*/
+        flex-direction: column;
         gap: vh;
     }
 }
