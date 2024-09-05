@@ -1,3 +1,7 @@
+html{
+    /* 更改id跳转为smooth */
+    scroll-behavior: smooth;
+}
 span {
     font-size: inherit; /* 强制继承父元素的字体大小 */
 }
