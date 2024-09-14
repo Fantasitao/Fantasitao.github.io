@@ -85,7 +85,11 @@ body {
     font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+
+     
 }
+
+
 
 // 烟花粒子样式
 .fireworks {
@@ -321,6 +325,17 @@ body {
     font-size: 12px;
     line-height: 20px;
     color: $color-text-body-tertiary;
+
+    .revolvermaps{
+        width: 8vw;
+        margin: auto;
+        background-color: transparent;
+        // // display: flex;
+        // // justify-content: center;
+        // // align-items: center;
+        padding-bottom: 36px;
+        
+    }
 
     .copyright {
         @include main-center;
