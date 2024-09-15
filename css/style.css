@@ -298,6 +298,7 @@ body {
 
 .footer .revolvermaps {
   width: 8vw;
+  min-width: 80px;
   margin: auto;
   background-color: transparent;
   padding-bottom: 60px;
