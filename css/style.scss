@@ -947,10 +947,25 @@ body {
     flex-direction: column;
     padding: 154px 40px 60px 40px;
 
+    //用于分割个人信息和经历，暂时替代about-middle
+    .section-divider {
+        @include main-center;
+        width: 100%;
+        max-width: var(--mw);
+        height: 1px;
+        background-image: radial-gradient(circle at center, $color-text-body-secondary 1px, transparent 1px);
+        background-size: 6px 1px;
+        background-repeat: repeat;
+        mask-image: radial-gradient(at center, #fff, transparent 90%);
+        -webkit-mask-image: radial-gradient(at center, #fff, transparent 90%);
+        margin: 24px 0;
+    }
+
     .about-top {
         max-width: var(--mw);
         display: flex;
         flex-direction: column;
+        margin-bottom: 48px;
     }
     .about-name-block{
         display: flex;
@@ -1259,6 +1274,7 @@ body {
         max-width: var(--mw);
         display: flex;
         flex-direction: column;
+        margin-top: 24px;
 
         .experience {
             width: 100%;
