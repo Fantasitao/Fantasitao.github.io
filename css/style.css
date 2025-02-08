@@ -1045,7 +1045,7 @@ body {
   max-width: var(--mw);
 }
 
-.about .section-divider {
+.about .divider-line {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1061,7 +1061,7 @@ body {
   margin: 24px 0;
 }
 
-.about .section-divider .main {
+.about .divider-line .main {
   width: 100%;
   display: flex;
   justify-content: space-between;

@@ -948,7 +948,7 @@ body {
     padding: 154px 40px 60px 40px;
 
     //用于分割个人信息和经历，暂时替代about-middle
-    .section-divider {
+    .divider-line {
         @include main-center;
         width: 100%;
         max-width: var(--mw);
