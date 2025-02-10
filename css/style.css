@@ -1756,7 +1756,7 @@ body {
   top: 64px;
   z-index: 9999;
   opacity: 0;
-  transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+  transition: opacity 0.4s ease-in-out, visibility 0s linear 0.4s;
   /* 添加 backdrop-filter 实现模糊背景 */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -1797,10 +1797,6 @@ body {
   align-items: center;
   justify-content: center;
   background: no-repeat center;
-}
-
-.skilltip .skilltip-box .box-title .card-img img {
-  z-index: 1;
 }
 
 .skilltip .skilltip-box .box-title .card-img::after {
