@@ -1070,7 +1070,7 @@ body {
         gap: 48px;
 
         //新加入的class
-        .introduce{
+        .introduce {
             display: flex;
             flex-direction: column;
         }
@@ -1093,7 +1093,7 @@ body {
                     flex-direction: row;
                     align-items: flex-start;
                     gap: 12px;
-                    padding:8px 16px;
+                    padding: 8px 16px;
 
                     .card-img {
                         width: 32px;
@@ -1134,6 +1134,7 @@ body {
                         transition: opacity .2s;
                     }
                 }
+
 
 
             }
@@ -1697,6 +1698,55 @@ body {
             opacity: 1;
             transition-delay: .4s;
             /* 悬停时立即开始过渡 */
+        }
+    }
+}
+
+// skill tip
+/* skill tip */
+.skilltip {
+    position: relative;
+    display: inline-block;
+
+    .skilltip-box {
+        width: 420px;
+        height: 160px;
+        visibility: hidden;
+        background-color: rgba(255, 255, 255, 0.1);
+        /* 半透明白色背景 */
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px;
+        position: absolute;
+        left: 6px;
+        top: 72px;
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+
+        /* 添加 backdrop-filter 实现模糊背景 */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        /* 为 Safari 提供兼容性 */
+
+        /* 使用 box-shadow 模拟描边 */
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.25),
+            /* 增加阴影 */
+            0px 0px 0px 1px rgba(255, 255, 255, 0.3);
+        /* 增加线性渐变效果的模拟描边 */
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 4px;
+        }
+    }
+
+    &:hover {
+        .skilltip-box {
+            visibility: visible;
+            opacity: 1;
+            transition-delay: .4s;
         }
     }
 }
