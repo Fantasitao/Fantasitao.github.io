@@ -1733,7 +1733,7 @@ body {
         /* 为 Safari 提供兼容性 */
 
         /* 使用 box-shadow 模拟描边 */
-        box-shadow: 0px 0px 200px 200px rgba($shadow, 0.85), //添加shadow
+        box-shadow: 0px 0px 200px 250px rgba($shadow, 0.9), //添加shadow
 
             inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2); //增加线性渐变效果的模拟描边 
 
@@ -1751,7 +1751,6 @@ body {
 
             .skill-level {
                 flex: 1 0 0;
-                color: #5980FF;
                 text-align: right;
 
                 font-size: 14px;
@@ -1789,7 +1788,7 @@ body {
 
         .box-skill-lv {
             display: flex;
-            width: 200px;
+            width: 250px;
             flex-direction: column;
             align-items: flex-start;
 
@@ -1810,12 +1809,12 @@ body {
 
         .box-skill-desc {
             margin-top: 6px;
-            color: rgba($color-white, 0.60);
+            color: $color-text-body-tertiary;
             text-align: left;
             // font-family: Roboto;
             font-size: 14px;
             font-style: normal;
-            font-weight: 300;
+            font-weight: 200;
             line-height: normal;
             // letter-spacing: -0.42px;
         }
@@ -1826,10 +1825,10 @@ body {
         cursor: pointer;
 
         .skilltip-box {
-        cursor: default;
+            cursor: default;
             visibility: visible;
             opacity: 1;
-            transition-delay: .4s;
+            transition-delay: .8s;
         }
     }
 }
