@@ -1754,10 +1754,10 @@ body {
                 color: #5980FF;
                 text-align: right;
 
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 32px;
                 font-style: normal;
-                font-weight: 200;
+                font-weight: 100;
                 line-height: normal;
             }
 
@@ -1801,7 +1801,7 @@ body {
                 // width: 185px; //使用inline style控制
                 height: 7px;
                 border-radius: 44px;
-                
+
                 //以下使用inline style控制
                 // background: rgba(89, 128, 255, 0.8);
                 // box-shadow: 2px 0px 19px 4px rgba(89, 128, 255, 0.4), 0px -1px 5px 0px rgba(0, 0, 0, 0.07) inset, 2px 5px 6px -3px rgba($color-white, 0.75) inset;
@@ -1823,7 +1823,10 @@ body {
     }
 
     &:hover {
+        cursor: pointer;
+
         .skilltip-box {
+        cursor: default;
             visibility: visible;
             opacity: 1;
             transition-delay: .4s;
