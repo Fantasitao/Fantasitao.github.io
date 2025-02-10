@@ -1709,17 +1709,20 @@ body {
     display: inline-block;
 
     .skilltip-box {
-        width: 420px;
-        height: 160px;
+        // width: 420px;
+        // height: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
         visibility: hidden;
-        background-color: rgba($color-fill-card, 0.6);
+        background-color: rgba($color-fill-card, 0.75);
         /* 半透明黑色背景 */
         text-align: center;
         border-radius: 16px;
-        padding: 20px;
+        padding: 16px;
         position: absolute;
-        left: 6px;
-        top: 72px;
+        left: 0px;
+        top: 64px;
         z-index: 9999;
         opacity: 0;
         transition: opacity 0.4s ease, visibility 0s linear 0.4s;
@@ -1730,37 +1733,93 @@ body {
         /* 为 Safari 提供兼容性 */
 
         /* 使用 box-shadow 模拟描边 */
-        box-shadow: 0px 0px 200px 200px rgba($shadow, 0.85),//添加shadow
-            
-        inset 0px 0px 0px 0.75px rgba(255, 255, 255, 0.2); //增加线性渐变效果的模拟描边 
-        
+        box-shadow: 0px 0px 200px 200px rgba($shadow, 0.85), //添加shadow
 
+            inset 0px 0px 0px 1px rgba(255, 255, 255, 0.2); //增加线性渐变效果的模拟描边 
 
+        .box-title {
+            display: flex;
+            align-items: center;
+            gap: 4px;
 
-                .card-img {
+            .card-name {
+                font-size: 16px;
+                line-height: 32px;
+                font-weight: 600;
+                color: rgba($color-text-body-primary, 0.8)
+            }
+
+            .skill-level {
+                flex: 1 0 0;
+                color: #5980FF;
+                text-align: right;
+
+                font-size: 16px;
+                line-height: 32px;
+                font-style: normal;
+                font-weight: 200;
+                line-height: normal;
+            }
+
+            .card-img {
+                width: 32px;
+                height: 32px;
+                opacity: .8;
+                transition: opacity .2s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: no-repeat center;
+
+                img {
+                    z-index: 1;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
                     width: 32px;
                     height: 32px;
-                    opacity: .8;
-                    transition: opacity .2s;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: no-repeat center;
-        
-                    img {
-                        z-index: 1;
-                    }
-        
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        width: 32px;
-                        height: 32px;
-                        filter: blur(10px);
-                        background: inherit;
-                        background-size: 100%;
-                    }
+                    filter: blur(10px);
+                    background: inherit;
+                    background-size: 100%;
                 }
+            }
+        }
+
+        .box-skill-lv {
+            display: flex;
+            width: 200px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            border-radius: 37px;
+            background: #383838;
+            box-shadow: 0px -2px 5px 0px rgba($color-white, 0.20) inset, 0px 4px 8px 0px rgba($color-fill-bg, 0.20) inset;
+
+            .box-skill-lv-in {
+                // width: 185px; //使用inline style控制
+                height: 7px;
+                border-radius: 44px;
+                
+                //以下使用inline style控制
+                // background: rgba(89, 128, 255, 0.8);
+                // box-shadow: 2px 0px 19px 4px rgba(89, 128, 255, 0.4), 0px -1px 5px 0px rgba(0, 0, 0, 0.07) inset, 2px 5px 6px -3px rgba($color-white, 0.75) inset;
+            }
+        }
+
+        .box-skill-desc {
+            margin-top: 6px;
+            color: rgba($color-white, 0.60);
+            text-align: left;
+            // font-family: Roboto;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            // letter-spacing: -0.42px;
+        }
+
     }
 
     &:hover {
