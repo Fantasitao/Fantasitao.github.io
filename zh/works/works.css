@@ -149,9 +149,10 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #8383830d;
-    /* width: fit-content; */
+    width: fit-content;
     width: 30vw;
-    min-width: 300px;
+    min-width: 250px;
+    max-width: 300px;
     position: sticky;
     top: 100px; /* 粘性元素在视口顶部 */
     height: fit-content;
